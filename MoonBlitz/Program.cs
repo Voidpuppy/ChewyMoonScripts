@@ -432,7 +432,7 @@ namespace MoonBlitz
         /// <param name="args">The <see cref="EventArgs" /> instance containing the event data.</param>
         private static void GameOnOnGameLoad(EventArgs args)
         {
-            if (Player.ChampionName != "Blitzcrank")
+            if (Player.ChampionName != "Xerath")
             {
                 return;
             }
