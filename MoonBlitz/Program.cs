@@ -437,13 +437,13 @@ namespace MoonBlitz
                 return;
             }
 
-            Q = new Spell(SpellSlot.Q, 0x41A);
+            Q = new Spell(SpellSlot.Q, 1600f);
             W = new Spell(SpellSlot.W);
             E = new Spell(SpellSlot.E);
-            R = new Spell(SpellSlot.R, 0x258);
+            R = new Spell(SpellSlot.R);
 
-            Q.SetSkillshot(0.25f, 0x46, 0x708, true, SkillshotType.SkillshotLine);
-            R.SetSkillshot(0.335f, 0x258, 347.79999f, false, SkillshotType.SkillshotCircle);
+            Q.SetSkillshot(0.6f, 95f, float.MaxValue, false, SkillshotType.SkillshotLine);
+
 
             CreateMenu();
 
