@@ -204,7 +204,6 @@ namespace MoonBlitz
 
             var positions = new List<Vector3> { position.To3D2(), fixedPred, unit.ServerPosition};
             var collision = LeagueSharp.Common.Collision.GetCollision(positions, input);
-            collision.RemoveAll(x => x.NetworkId == input.Unit.NetworkId);
 
             hitChance = collision.Count > 0 ? HitChance.Collision : hitChance;
 
